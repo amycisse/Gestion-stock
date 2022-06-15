@@ -13,7 +13,9 @@ class CategorieType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('nom', TextType::class)
+            ->add('nom', TextType::class,['label_attr' => [
+                'class' => 'col-sm-2 control-label',
+            ]])
         ;
     }
 

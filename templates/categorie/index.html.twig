@@ -20,8 +20,9 @@
                 <td>{{ categorie.id }}</td>
                 <td>{{ categorie.nom }}</td>
                 <td>
-                    <a href="{{ path('app_categorie_show', {'id': categorie.id}) }}">show</a>
-                    <a href="{{ path('app_categorie_edit', {'id': categorie.id}) }}">edit</a>
+                    <a href="{{ path('app_categorie_show', {'id': categorie.id}) }}" class="btn btn-success">show</a>
+                    <a href="{{ path('app_categorie_edit', {'id': categorie.id}) }}" class="btn btn-info">modifier</a>
+                    {# <a href="{{ csrf_token('delete' ~ categorie.id) }}">supprimer</a> #}
                 </td>
             </tr>
         {% else %}
@@ -32,6 +33,6 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_categorie_new') }}">Create new</a>
+    {# <a href="{{ path('app_categorie_new') }}">Create new</a> #}
 </div>
 {% endblock %}

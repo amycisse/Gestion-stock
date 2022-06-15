@@ -22,8 +22,8 @@
                 <td>{{ produit.libelle }}</td>
                 <td>{{ produit.stock }}</td>
                 <td>
-                    <a href="{{ path('app_produit_show', {'id': produit.id}) }}">show</a>
-                    <a href="{{ path('app_produit_edit', {'id': produit.id}) }}">edit</a>
+                    <a href="{{ path('app_produit_show', {'id': produit.id}) }}" class="btn btn-success">show</a>
+                    <a href="{{ path('app_produit_edit', {'id': produit.id}) }}" class="btn btn-info">edit</a>
                 </td>
             </tr>
         {% else %}

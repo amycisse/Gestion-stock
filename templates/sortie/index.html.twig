@@ -24,8 +24,8 @@
                 <td>{{ sortie.prix }}</td>
                 <td>{{ sortie.date ? sortie.date|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('app_sortie_show', {'id': sortie.id}) }}">show</a>
-                    <a href="{{ path('app_sortie_edit', {'id': sortie.id}) }}">edit</a>
+                    <a href="{{ path('app_sortie_show', {'id': sortie.id}) }}" class="btn btn-success">show</a>
+                    <a href="{{ path('app_sortie_edit', {'id': sortie.id}) }}" class="btn btn-info">edit</a>
                 </td>
             </tr>
         {% else %}
